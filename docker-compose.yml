@@ -6,7 +6,7 @@ services:
       context: flag_container
       dockerfile: Dockerfile
     ports:
-    - '2022:22'
+    - '22:22'
     networks:
       nw0:
         ipv4_address: 192.168.0.2

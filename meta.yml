@@ -5,6 +5,8 @@ description: |
 
   Now you can SSH to ctfuser@localhost -p <local_port> with password ctfuser
 
+  Now just "look around" :-)
+
 value: 100
 category: Miscellaneous
 flag: CTF_SDaT{XXoq9JWY$Y}
