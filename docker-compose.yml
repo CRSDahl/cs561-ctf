@@ -1,0 +1,37 @@
+version: "3.9"
+services:
+  crs_container_hopping_1:
+    container_name: container-1
+    build:
+      context: flag_container
+      dockerfile: Dockerfile
+    ports:
+    - '2022:22'
+    networks:
+      nw0:
+        ipv4_address: 192.168.0.2
+    command: bash start_nc.sh
+  crs_container_hopping_2:
+    build:
+      context: webserver
+      dockerfile: Dockerfile
+    container_name: container-2
+    networks:
+      nw0:
+        ipv4_address: 192.168.0.3
+  crs_container_hopping_3:
+    build:
+      context: relay
+      dockerfile: Dockerfile
+    container_name: container-3
+    networks:
+      nw0:
+        ipv4_address: 192.168.0.4
+
+networks:
+  nw0:
+    external: false
+    ipam:
+      driver: default
+      config:
+        - subnet: "192.168.0.0/24"

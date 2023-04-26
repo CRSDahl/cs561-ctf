@@ -1,0 +1,102 @@
+\documentclass{article}
+\usepackage[papersize={8.5in,11in}]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{url}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{gensymb}
+\usepackage{hyperref}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{placeins}
+\usepackage{setspace}
+%\usepackage{biblatex}
+\usepackage{abstract}
+\usepackage{subfigure}
+\usepackage[T1]{fontenc}
+\usepackage{wrapfig}
+\usepackage{sectsty}
+\usepackage{array}
+\usepackage{listings}
+\usepackage{pdfpages}
+\usepackage{rotating}
+\usepackage{markdown}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{3}
+
+					
+\definecolor{red umass}{rgb}{0.53334,0.11,0.11}
+\sectionfont{\color{red umass}{}\fontfamily{phv}\selectfont}
+\subsectionfont{\color{red umass}{}\fontfamily{phv}\selectfont}
+
+\begin{document}
+
+\hypersetup{							
+pdfauthor = {Christopher Dahl,
+    		},		
+pdftitle = {Computer Science},			
+pdfsubject = {UMass Subject}}
+
+\newcounter{cptfigure}
+\addtocounter{cptfigure}{1}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\begin{titlepage}
+\begin{center}
+
+\begin{figure}[!h]{}
+\includegraphics[width=0.5\textwidth]{images/UMASS.png}
+\end{figure}
+\vspace{2cm}
+\textsc{\Large{CS561 $title$}}\\[2cm]
+
+
+\color{red umass}
+\HRule \\[0.4cm]
+
+{\huge \bfseries S-Computer Networking Lab \\ $title$ \\[0.4cm] }
+
+\HRule \\[1cm]
+\color{black}
+
+\begin{center} \large
+\emph{Author:}\\
+\textsc{Christopher Dahl}\\
+\vspace{3mm}
+\emph{Department:}\\
+\textsc{Computer Science}\\
+\vspace{3mm}
+\emph{Cursus:}\\
+\textsc{Graduate}\\
+\end{center}
+
+\vfill
+{\large \today}
+
+\end{center}
+\end{titlepage}
+
+\thispagestyle{empty}
+\newpage
+\thispagestyle{empty}
+\setcounter{page}{0}
+\renewcommand{\arraystretch}{1.5}
+
+\thispagestyle{empty}
+\setcounter{page}{0}
+
+$body$
+
+%\nocite{*}
+
+%\printbibliography
+
+\end{document}

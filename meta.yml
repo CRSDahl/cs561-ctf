@@ -1,0 +1,13 @@
+name: Container Hopping
+description: |
+  Run
+  $ `ssh -L <local_port>:crs_container_hopping_1:22 -p 56151 <user>@cs561.cs.umass.edu`
+
+  Now you can SSH to ctfuser@localhost -p <local_port> with password ctfuser
+
+value: 100
+category: Miscellaneous
+flag: CTF_SDaT{XXoq9JWY$Y}
+
+# administrative
+container_name: crs_container_hopping

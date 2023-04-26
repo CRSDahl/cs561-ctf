@@ -1,0 +1,1 @@
+pandoc ../writeup.md --template template.tex -o report.pdf
