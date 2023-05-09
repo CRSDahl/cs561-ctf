@@ -1,4 +1,4 @@
-name: Container Hopping
+name: In plain sight
 description: |
   Run
   $ `ssh -L <local_port>:crs_container_hopping_1:22 -p 56151 <user>@cs561.cs.umass.edu`
